@@ -1,0 +1,33 @@
+{
+    "hello": "Hello",
+    "welcome": "Welcome",
+    "appTitle": "Cell migration analyzer",
+    "sidebar": {
+          "title": "Sidebar",
+          "getLastResults": "Get last results",
+          "uploadData": "Upload data"
+    },
+    "chosenSize": "Chosen size",
+    "confirm": "Confirm",
+    "cancel": "Cancel",
+    "processing": "Processing your request... 🔄",
+    "chosen_size": "Chosen size",
+    "levelsets_generated": "Levelsets generated successfully",
+    "show_levelsets": "SHOW LEVELSETS",
+    "generate_levelsets": "Generate LevelSets",
+    "generate_all": "Generate All",
+    "generate_segmented": "Generate segmented result",
+    "upload_dapi": "Upload DAPI images",
+    "choose": "Choose",
+    "generate_new_result": "Generate new result",
+    "add_to_existing": "Add to existing result",
+    "choose_existing": "Choose from existing results",
+    "generated_levelset": "Generated Levelset",
+    "upload_segmented_data": "Generate levelsets",
+    "upload_dapi_images": "Upload DAPI images",
+    "upload_brightfield": "Upload Brightfield images",
+    "add_to_existing_result": "Add to existing result"
+}
+      
+  
+  

@@ -1,0 +1,429 @@
+.con {
+    border: 1px solid black;
+    width: 70vw; 
+    height: 80vh;
+    left: 50%;
+    top: 10%;
+    transform: translateX(-50%);
+    position: absolute;
+    background-color: rgba(70, 119, 172, 0.459);;
+    overflow-y: scroll;
+
+}
+.scratch-info {
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 0.5%;
+    position: absolute;
+    left: 50vw;
+    box-shadow: 0px 0px 10px black;
+    z-index: 40000;
+}
+.data-visualizer {
+  background-color: rgb(243, 242, 242);
+  width: 40vw;
+  height: 20vh;
+}
+.select-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 4px solid black;
+
+}
+
+.information-place {
+  background-color: white;
+  border-bottom: 3px solid black;
+  margin-top: -2%;
+  margin-bottom: 2%;
+}
+
+.hideCSVBTN {
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  float: right;
+}
+.csvResultTable {
+  width: 50%;
+  overflow-y: scroll;
+}
+.calculated-data-show {
+  position: absolute;
+  width: 20vw;
+  height: 100vh;
+  z-index: 8000;
+  right: -15%;
+  top: 15%;
+
+}
+.scratch-width-approximation {
+    position: absolute;
+    top: 80vh;
+    left: 50vw;
+    transform: translate(-150%, -50%); /* Centers it properly */
+    background: rgba(0, 0, 0); /* Semi-transparent black */
+    color: #fff; /* White text */
+    padding: 15px 25px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+    z-index: 51000;
+}
+
+.scratch-width-approximation span {
+    color: #4CAF50; /* Green highlight for the value */
+    font-weight: bold;
+}
+
+.select-heading > h3 {
+  font-size: 1.5em;
+}
+.comment-section {
+  position: absolute;
+  height: 100vh;
+  width: 40vw;
+  right: -100vw; /* Initially hidden */
+  top: 0;
+  transition: right 0.5s ease-in-out; /* Smooth sliding effect */
+}
+
+.comment-section.show {
+  right: -20vw; 
+}
+.selector-menu {
+  position: absolute;
+  right: 95%;
+  top: 10vh;
+  z-index: 400;
+  width: 18vw;
+  height: 60vh;
+}
+.container {
+    position: absolute;
+    width: 70vw;
+    left: 20%;
+    top: 10%;
+}
+
+
+.result-switch {
+  margin-top: 10%;
+}
+.created-time {
+    float: right;
+}
+tbody {
+  scrollbar-width: thin;
+  scrollbar-color: #3b82f6 #e5e7eb; /* Custom color */
+}
+tbody::-webkit-scrollbar {
+  width: 8px;
+}
+tbody::-webkit-scrollbar-thumb {
+  background-color: #3b82f6; /* Custom color */
+}
+tbody::-webkit-scrollbar-track {
+  background-color: #e5e7eb; /* Custom track color */
+}
+
+.original-data-show {
+    position: relative;
+    width: 40vw;
+    height: 60vh;
+    z-index: 4000;
+    left: 34vw;
+    top: 36vh;
+    transform: translate(-50%,-50%);
+
+}
+
+.next-result-switcher {
+    width: 100%;
+    height: 5vh;
+}
+.next-result-switcher .result-range {
+    width: 20%;
+    height: 100%;
+}
+.next-result-switcher .result-range p {
+    font-weight: bold;
+    font-size: 1.1em;
+
+}
+.next-result-switcher .arrow-keys {
+    margin-left: 72%;
+}
+.next-result-switcher .arrow {
+    width: 12%;
+    display: inline;
+    color: white;
+    font-weight: bold;
+    padding: 2%;
+}
+
+.next-result-switcher .arrow:hover {
+    transform: scale(1.05);
+}
+
+.image-original {
+    width: 92%;
+    height: 91%;
+    margin-top: 2%;
+    margin-left: 1%;
+    box-shadow: 0px 0px 1px white;
+    opacity: 50%;
+}
+
+.styled-range {
+    position: relative;
+    width: 95%; /* Full width of the container */
+    height: 8px; /* Thickness of the slider track */
+    background: #ddd; /* Light gray background for the track */
+    border-radius: 10px; /* Rounded corners for the track */
+    outline: none; /* Remove the blue outline when focused */
+    transition: background 0.3s ease-in-out; /* Smooth hover effect */
+    cursor: pointer;
+    text-align: center;
+    right: 5vw;
+    top: -12vh;
+}
+
+.styled-range:hover {
+    background: #ccc; /* Slightly darker gray */
+}
+
+.styled-range::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Remove default styling */
+    appearance: none;
+    width: 20px; /* Width of the thumb */
+    height: 20px; /* Height of the thumb */
+    background: #007bff; /* Blue color */
+    border: 3px solid #fff; /* White border for contrast */
+    border-radius: 50%; /* Make it circular */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add a shadow for depth */
+    cursor: pointer; /* Pointer cursor for hover */
+    transition: transform 0.2s ease-in-out; /* Smooth scale effect */
+}
+
+/* Thumb hover effect */
+.styled-range::-webkit-slider-thumb:hover {
+    transform: scale(1.2); /* Slightly enlarge the thumb on hover */
+}
+
+/* For Firefox */
+.styled-range::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: #007bff;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.original-image {
+  position: absolute;
+  left: -5vw;
+  top: -2vh;
+  
+}
+
+.original-image img {
+    width: 92%;
+    height: 91%;
+    margin-top: 2%;
+    margin-left: 1%;
+    box-shadow: 0px 0px 1px white;
+    opacity: 50%;
+}
+
+.downloadBTN {
+  margin: 0px auto;
+  margin-top: 5%;
+  
+}
+
+.img_menu {
+    display: flex;
+    position: absolute;
+    top: -10vh;
+    left: -25vw;
+    border: 1px solid black;
+    background-color: rgba(70, 119, 172, 0.459);
+    width: 110vw;
+    height: 110vh;
+    justify-content: center;
+    align-items: center;
+}
+.img_menu button {
+  padding-bottom: 1%; 
+  text-align: center;
+  float: right; 
+  border-radius: 20px;
+
+}
+.tmp_box {
+  position: absolute;
+  bottom: 85%;
+
+}
+.originalBTN {
+  width: 100%;
+  margin-top: 5%;
+  background-color: rgb(133, 235, 133);
+  color: white;
+  font-weight: bold;
+  box-shadow: 0px 0px 1px black;
+  outline: none;
+
+}
+.scratchWidthBTN {
+  width: 100%;
+  margin-top: 7%;
+  background-color: rgb(190, 181, 48);
+  color: white;
+  font-weight: bold;
+  box-shadow: 0px 0px 1px black;
+  outline: none;
+  font-size: 1em;
+
+}
+
+.scratchWidthBTN:hover {
+  transform: scale(1.05);
+}
+
+.originalBTNHide {
+  width: 100%;
+  margin-top: 5%;
+  background-color: rgb(192, 62, 29);
+  color: white;
+  font-weight: bold;
+  box-shadow: 0px 0px 1px black;
+  outline: none;
+
+}
+.originalBTN:hover {
+  transform: scale(1.05);
+}
+.tmp_box table {
+  transform: scale(0.5);
+  
+}
+.visualizer-menu > button {
+  float: right;
+}
+
+
+.info-box {
+  width: 40%;
+  height: 7%;
+  position: absolute;
+  top: 17%;
+  left: 30%;
+  z-index: 4000;
+  border-radius: 15px;
+  margin: 0px auto;
+  text-align: center;
+}
+.info-box p {
+  font-size: 1.3em;
+  display: inline;
+  margin-left: 10%;
+}
+.info-box p span {
+  font-weight: bold;
+  
+}
+.number-selector {
+  position: absolute;
+  z-index: 5000;
+  width: 20vw;
+  height: 40vh;
+  left: 30%;
+  top: 30%;
+  border-radius: 5%;
+
+}
+.scratch-width-visualisation {
+  position: absolute;
+  width: 40vw;
+  height: 45vh;
+  left: 10vw;
+  top: 10vh;
+  border-radius: 5%;
+  z-index: 50000;
+  background-color: whitesmoke;
+}
+.number-selector > button {
+  float: right;
+}
+.number-selector > h4 {
+  display: inline;
+  padding: 5%;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+.number-selector > p {
+  text-align: center;
+  font-size: 1.3em;
+}
+
+.info-box aside {
+  font-size: 0.7em;
+  text-align: center;
+}
+.boundary-distance-graph {
+  z-index: 10; /* Ensure it's above other elements */
+  width: 100%;
+  height: 100%;
+}
+
+.pencilBTN {
+  display: inline;
+  background-color: rgb(6, 6, 7);
+  color: white;
+  padding: 1.1%;
+  font-weight: bold;
+  font-size: 1em;
+}
+.pencilBTN:hover {
+  background-color: blue;
+}
+
+.data-visualizer {
+  position: absolute;
+  overflow:visible;
+  z-index: 10000;
+  width: 60vw;
+}
+.disabled-btn {
+  background-color: gray;
+  cursor: not-allowed;
+}
+
+.table-info {
+    display: inline;
+    width: 4%;
+    left: 0vw;
+    position: absolute;
+    cursor: pointer;
+}
+
+.attr-info {
+    position: absolute;
+    z-index: 80000;
+    border: 2px solid black;
+    width: 40vw;
+    height: 40vh;
+    background-color: red;
+    top: 20%;
+    left: 40%;
+}

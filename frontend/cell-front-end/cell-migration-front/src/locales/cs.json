@@ -1,0 +1,29 @@
+{
+    "appTitle": "Analýza migrace buněk",
+    "sidebar": {
+      "title": "Postranní panel",
+      "getLastResults": "Předchozí výsledky",
+      "uploadData": "Nahrát data"
+    },
+    "chosenSize": "Zvolená velikost",
+    "processing": "Zpracovávání vašeho požadavku... 🔄",
+    "chosen_size": "Vybraná velikost",
+    "confirm": "Potvrdit",
+    "cancel": "Zrušit",
+    "levelsets_generated": "Úspěšně vygenerované levelsety",
+    "show_levelsets": "ZOBRAZIT LEVELSETY",
+    "generate_levelsets": "Generovat LevelSety",
+    "generate_all": "Generovat vše",
+    "generate_segmented": "Generovat segmentovaný výsledek",
+    "upload_dapi": "Nahrát DAPI obrázky",
+    "choose": "Vybrat",
+    "generate_new_result": "Generovat nový výsledek",
+    "add_to_existing": "Přidat k existujícímu výsledku",
+    "choose_existing": "Vyberte z existujících výsledků",
+    "generated_levelset": "Vygenerovaný LevelSet",
+    "upload_segmented_data": "Ulož a vygeneruj levelsety",
+    "upload_dapi_images": "Ulož DAPI obrázky",
+     "upload_brightfield": "Ulož brightfield obrázky",
+     "add_to_existing_result": "Přidej do existujícího výsledku"
+  }
+  
